@@ -1,0 +1,349 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Doto:wght,ROND@100..900,25&display=swap'); */
+
+
+
+*{
+background-color: #060B13;
+text-decoration:none;
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: "Doto", serif;
+}
+
+.nav {
+    position: sticky;
+    top: 0; /* Stick to the top */
+    /* background-color:#060B13; Optional: to make sure the nav is visible */
+    z-index: 10; /* To keep it on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%; /* Optional: ensures full width */
+    transition: 1s;
+    border-bottom: 2px solid white;
+    border-radius: 20px;;
+}
+
+.nav.scrolled
+{
+    background-color: #202731;    
+}
+
+
+.logo
+{
+    height:50p;    
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.navKeys
+{
+    display: inline-block;
+    margin:10px;
+    color:#15A141;
+}
+.navKeys.nav.scrolled
+{
+    background-color: #202731;   
+}
+
+li{
+   
+    display: inline-block;
+    margin: 10px;
+}
+
+a{
+    padding:4px;
+    color: #15A141;
+    border: 2px solid green;
+    
+}
+a:hover
+{
+    
+    color: white;
+    border-radius:2px;
+    background:green;
+    border-radius: 20px;
+    
+
+}
+
+
+p
+{
+    margin:20px;
+    display: flex;
+     justify-content: center;
+    font-family: "Doto", serif;
+    color:green;
+    height: max-content;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.Calci {
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    border-radius: 40px;
+    height: 90vh; /* Changed to a valid unit like vh for responsive height */
+    transition: 1s;
+    padding: 20px; /* Optional padding */
+}
+
+.calci-model {
+    background: rgb(46, 46, 47);
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
+    max-height: 550px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: flex-start; /* Align items from the top */
+    align-items: center;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.display {
+
+    margin-top: 0;
+    background-color:#202731;
+    min-height: 100px;
+    min-width: 384px;
+    display: flex;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border: 1px solid gray;
+    border-radius: 11px;
+text-decoration: none;
+/* font-family: none; */
+    font-size:6ch;
+    font-weight: 600;
+}
+
+.NumPad
+{
+     display: flex;
+     flex-direction: column;
+    justify-content: space-evenly;
+    background-color:black;
+    min-height: 420px;
+    min-width: 395px;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+
+.firstRow
+{
+    display:flex;
+    justify-content: space-evenly;
+    min-height: 60px;
+
+    background-color:black;
+   
+}
+
+.ndRow
+{
+    display:flex;
+    justify-content: space-evenly;
+    min-height: 60px;
+    background-color:black;
+  
+   
+}
+.rdRow
+{
+    display:flex;
+    justify-content: space-evenly;
+    min-height: 60px;
+    background-color:black;
+ 
+
+}
+.thRow
+{
+    display:flex;
+    justify-content:space-evenly;
+    min-height: 60px;
+    background-color:black;
+ 
+  
+}
+
+.FthRow
+{
+    
+    display:flex;
+    justify-content:space-evenly;
+
+    min-height: 60px;
+    background-color:black;
+}
+
+.o1{
+    font-family: none;
+    min-width: 70px;
+    border:1px dashed white;
+    border-radius: 40px;
+    background-color: #202731;
+    color:white;
+    font-size: 25px;
+    
+}
+.opr{
+    font-family: none;
+    min-width: 70px;
+    border:1px dashed white;
+    border-radius: 40px;
+    color:white;
+    font-size: 25px;
+    
+}
+.clear
+{
+    font-family: none;
+    min-width: 70px;
+    border:1px dashed white;
+    border-radius: 40px;
+    color:white;
+    font-size: 25px; 
+    cursor: grab;
+}
+
+.o1:hover
+{
+    background-color:green;
+    font-size: 20px;
+    cursor:pointer;
+    
+}
+.opr:hover{
+    font-size: 20px;
+    cursor:grab;
+}
+
+.equal
+{
+    font-family: none;
+    min-width: 140px;
+    min-height: 60px;
+    border:1px dashed white;
+    border-radius: 20px;
+    color:white;
+    font-size: 25px;
+    cursor:grab;
+}
+
+.del{
+    min-width: 70px;
+    border:1px dashed white;
+    border-radius: 40px;
+    color:white;
+    font-size: 25px;
+    cursor: grab;
+}
+
+
+
+/*
+.stRow
+{
+    background-color: #202731;   
+    color:white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-size: 4ch;
+}
+.stRow:click
+{
+    font-size: 3ch;
+}
+
+.stRow:hover
+{
+    background-color: green;
+cursor:grab;
+font-size: 3.6ch;
+} */
+
+
+/* .ndRow
+{
+    font-size:xx-large;
+    font-weight: 1100;;
+    color:green;
+    height: 60px;;
+    width: 60px;
+    background-color:#202731;
+    border: 1px solid white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+.rdRow
+{    
+    font-size:xx-large;
+    font-weight: 1100;
+    color: green;
+    height: 60px;;
+    width: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:#202731;
+    border: 1px solid white;
+
+    border-radius: 35px;
+}
+.thRow
+{
+    font-size:xx-large;
+    font-weight: 1100;
+    color:green;
+    height: 60px;;
+    width: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:#202731;
+    border: 1px solid white;
+
+    border-radius: 35px;
+} */
+
+
+
+/* .TO-DO
+{
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    border-radius: 40px;
+    position: relative;
+    height: 60cqmax;
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+   
+} */
+
