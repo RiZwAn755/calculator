@@ -93,6 +93,10 @@ clear.addEventListener('click', function () {
 function calculate() {
   op = op.trim();
   switch (op) {
+    case '%':
+      result = op1 * (op2 / 100);  // Calculate percentage based on op1 and op2
+      op1 = result;                // Update op1 with the result
+      break;
     case '/':
       if (op2 === 0) {
         op1 = "Error"; // Prevent division by zero
