@@ -94,12 +94,12 @@ function calculate() {
   op = op.trim();
   switch (op) {
     case '%':
-      result = op1 * (op2 / 100);  // Calculate percentage based on op1 and op2
-      op1 = result;                // Update op1 with the result
+      result = op1 * (op2 / 100);  gi
+      op1 = result;                
       break;
     case '/':
       if (op2 === 0) {
-        op1 = "Error"; // Prevent division by zero
+        op1 = "Error"
       } else {
         result =  op1 / op2;
         // op1 = op1 / op2;
